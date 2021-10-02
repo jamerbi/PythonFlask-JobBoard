@@ -1,16 +1,19 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Job Board</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for(filaname='css/bulma.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{http://use.fontawesome.com/releases/v5.2.0/css/all.css}}"
-  </head>
-  <body>
-    <div class="container top">
-      <div class="content">
-        {% block content %}
-        {% endblock %}
-      </div>
+
+<head>
+  <title>Job Board</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filaname='css/bulma.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{http://use.fontawesome.com/releases/v5.2.0/css/all.css}}">
+</head>
+
+<body>
+  <div class="container top">
+    <div class="content">
+      {% block content %}
+      {% endblock %}
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
